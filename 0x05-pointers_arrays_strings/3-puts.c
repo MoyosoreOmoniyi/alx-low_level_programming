@@ -18,7 +18,7 @@ void _puts(char *str)
 		} else
 		{
 			count = 0;
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
