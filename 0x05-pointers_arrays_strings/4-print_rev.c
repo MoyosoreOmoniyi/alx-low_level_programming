@@ -14,13 +14,13 @@ void print_rev(char *s)
 		if (s[count] != '\0')
 		{
 			count++;
-		} else
-		{
-			count = -1;
 		}
+		break;
 	}
 
-	for (count--; count >= 0; count--)
+	for (count--; count >= 0; count
+	{
 		_putchar(s[count]);
+	}
 	_putchar('\n');
 }
