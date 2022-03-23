@@ -15,7 +15,10 @@ void _puts(char *str)
 		{
 			_putchar(str[count - 1]);
 			count++;
+		} else
+		{
+			count = 0;
 		}
-		count = 0;
+		_putchar('\n');
 	}
 }
