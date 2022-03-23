@@ -14,8 +14,10 @@ void print_rev(char *s)
 		if (s[count] != '\0')
 		{
 			count++;
+		} else
+		{
+			break;
 		}
-		break;
 	}
 
 	for (count--; count >= 0; count--)
