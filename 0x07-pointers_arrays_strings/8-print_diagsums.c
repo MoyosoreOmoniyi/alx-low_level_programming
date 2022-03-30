@@ -5,18 +5,18 @@
  * diagonals of a square matrix of integers
  * @a: input pointer.
  * @size: size of the matrix
- * Return: no return.
+ * Return: void.
  */
 void print_diagsums(int *a, int size)
 {
-	int i, a = 0, b = 0;
+	int i, s1 = 0, s2 = 0;
 
 	for (i = 0; i < (size * size); i++)
 	{
 		if (i % (size + 1) == 0)
-			a += *(a + i);
+			s1 += *(a + i);
 		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
-			b += *(a + i);
+			s2 += *(a + i);
 	}
-	printf("%d, %d\n", a, b);
+	printf("%d, %d\n", s1, s2);
 }
