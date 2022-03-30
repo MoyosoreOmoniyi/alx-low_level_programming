@@ -13,6 +13,13 @@ int _strlen_recursion(char *s)
 		return (1 + _strlen_recursion(s + 1));
 }
 
+/**
+ * compare_to - compares each character of the string.
+ * @s: string
+ * @a: smallest iterator.
+ * @b: biggest iterator.
+ * Return: .
+ */
 int compare_to(char *s, int a, int b)
 {
 	if (*(s + a) == *(s + b))
